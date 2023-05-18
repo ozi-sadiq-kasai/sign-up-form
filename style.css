@@ -23,26 +23,61 @@ section{
   display: flex;
   justify-content:center;
   align-items: center;
-
+  gap: 2%;
+  padding: 0 70px;
   background-image: url(./images/bg-intro-desktop.png);
+  
 }
 .heading{
   border: 1px solid #000;
-  padding: 0 50px;
+  width: 49%;
+
 }
 
 .heading h1{
   font-weight: 700;
   font-size: 2.5em;
   line-height: 1.1;
+
 }
  .heading p{
   font-weight: 400;
-  margin-top: 20px;;
-  font-size:12px;
+  margin-top: 15px;
+  font-size:11px;
+
+  border: 1px solid white;
 }
+
+/* FORM */
 .form{
-  padding: 0 50px;
-  border: 1px solid blue;
+  width: 49%;
+ }
+ button,input{
+  padding: 7px 6px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+input{
+  margin-bottom: 15px;
+  border: 1px solid hsl(248, 32%, 49%);
+}
+form{
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  color: black;
+  background-color: white;
+  padding: 20px  15px 0 15px;
+  
+}
+
+.trial{
+  width: 100%;
+}
+
+form button{
+  background-color:  hsl(154, 59%, 51%);
+
 }
  
