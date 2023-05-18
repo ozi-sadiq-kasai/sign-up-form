@@ -23,12 +23,11 @@ section{
   justify-content:center;
   align-items: center;
   gap: 2%;
-  padding: 0 70px;
+  padding: 20px 50px;
   background-image: url(./images/bg-intro-desktop.png);
   
 }
 .heading{
-  border: 1px solid #000;
   width: 49%;
 
 }
@@ -42,9 +41,8 @@ section{
  .heading p{
   font-weight: 400;
   margin-top: 15px;
-  font-size:13px;
+  font-size:12px;
   color: white;
-  border: 1px solid white;
 }
 
 /* FORM */
@@ -99,5 +97,43 @@ form p{
 }
 form p span{
   color:hsl(0, 100%, 74%) ;
+}
+
+
+@media only screen and (max-width: 375px){
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/bg-intro-mobile.png);
+    border: 2px solid #000;
+      padding: 0 20px;
+  }
+  .heading{
+  width: 100%;
+
+}
+  .heading h1{
+  font-weight: 600;
+  font-size: 1.2em;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+   .heading p{
+  font-size:13px;
+  width: 85%;
+  margin: 15px auto;
+  text-align: center;
+}
+.form{
+  width: 100%;
+}
+
 }
  
