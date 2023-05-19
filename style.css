@@ -8,7 +8,6 @@
 .container{
   width: 100vw;
   height: 100vh;
-  border: 1px solid #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,8 +16,8 @@
 section{
   max-width: 1440px;
   width: 70%;
-  height: 500px;
-  background-color:  hsl(0, 100%, 74%) ;
+  height: auto;
+  background-color:hsl(0, 100%, 74%);
   display: flex;
   justify-content:center;
   align-items: center;
@@ -41,25 +40,39 @@ section{
  .heading p{
   font-weight: 400;
   margin-top: 15px;
-  font-size:12px;
+  font-size:14px;
   color: white;
 }
 
+
 /* FORM */
+.verification{
+  float: right;
+  color: hsl(0, 100%, 74%);
+}
+
 .form{
   width: 49%;
  }
+
  .form button span{
-  color:hsl(246, 25%, 77%) 
+  color:hsl(246, 25%, 77%) ;
  }
+ .icon{
+  position: relative;
+  top: -35px;
+  left: 300px;
+ }
+
  button,input{
   padding: 15px 6px;
   border: none;
   outline: none;
   border-radius: 5px;
 }
+
 input{
-  margin-bottom: 15px;
+  /* margin-bottom: 5px; */
   border: 1px solid hsl(246, 25%, 77%);
   font-weight: 600;
 }
@@ -72,7 +85,7 @@ form{
   flex-direction: column;
   color: black;
   background-color: white;
-  padding: 20px  20px 0 20px;
+  padding:20px 20px 0 20px;
   border-radius: 7px;
   
 }
@@ -81,14 +94,20 @@ form{
   width: 100%;
   background-color: hsl(248, 32%, 49%);
   color: white;
-  font-weight: 600;
+  font-weight:600;
 }
 
 form button{
   background-color:  hsl(154, 59%, 51%);
   cursor: pointer;
-
+  font-weight:600;
+  color:white;
 }
+form button:hover{
+  background-color:  hsl(154, 59%, 51%);
+  opacity: 0.7;
+}
+
 form p{
   color:hsl(246, 25%, 77%) ;
   font-size:8px;
@@ -105,14 +124,18 @@ form p span{
     display: flex;
     flex-direction: column;
   }
+  .icon{
+    position: relative;
+    top: -35px;
+    left: 250px;
+   }
   section{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     background-image: url(./images/bg-intro-mobile.png);
-    border: 2px solid #000;
-      padding: 0 20px;
+    padding: 0 20px;
   }
   .heading{
   width: 100%;
@@ -127,12 +150,17 @@ form p span{
 }
    .heading p{
   font-size:13px;
-  width: 85%;
+  width: 70%;
   margin: 15px auto;
   text-align: center;
 }
 .form{
   width: 100%;
+}
+.trial{
+  width: 100%;
+  color: white;
+  font-weight: 400;
 }
 
 }
