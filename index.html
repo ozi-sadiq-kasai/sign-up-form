@@ -9,41 +9,30 @@
   <title>Frontend Mentor | Intro component with sign up form</title>
 </head>
 <body>
-  <main class="container">
-    <section>
-      <div class='heading'>
-        <h1>Learn to code by watching others</h1>
-        <p>See how experienced developers solve problems in real-time.
-        Watching scripted tutorials is great,but understanding how developers think is invaluable.</p>  
-      </div>
-      <div class="form">
+  <main class="card">
+    <section class='info'>
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time.
+      Watching scripted tutorials is great,but understanding how developers think is invaluable.</p>
+    </section>
+    <section class='form'>
+      <div class="trial-div">
         <button class="trial">Try it free 7 days <span>then $20/mo.thereafter</span></button>
-        <form action="#">
-          <input type="text" placeholder="First Name" id="firstName">
-          <div>
-            <p class="verification">First Name cannot be empty</p>
-            <img class='icon'src="images/icon-error.svg" alt="error">
-          </div>
-          <input type="text" placeholder="Last Name" id="lastName">
-          <div>
-            <p class="verification">Last Name cannot be empty</p>
-            <img class='icon' src="images/icon-error.svg" alt="error">
-          </div>
-          <input type="email" placeholder="Email Address"  id="">
-          <div>
-            <p class="verification">Email Address cannot be empty</p>
-            <img class='icon'src="images/icon-error.svg" alt="error">
-          </div>
-          <input type="password" placeholder="Password" >
-          <div>
-            <p class="verification">Password cannot be empty</p>
-            <img class='icon' src="images/icon-error.svg" alt="error">
-          </div>
-          <button>CLAIM YOUR FREE TRIAL</button>
-          <p>By clicking the button,you are agreeing to our <span>Terms and Services.</span>
-          </p>
-        </form>
-      </div>
+      </div>  
+      <form action="#">
+        <div>
+          <input type="text" placeholder="First Name" id="fname">
+          <span>First Name cannot be blank</span><span><img src="images/icon-error.svg" alt="error"></span>
+        </div>
+        <div>
+          <input type="text" placeholder="Last Name" id="lname">
+          <span></span><span></span>
+        </div>
+        <input type="email" placeholder="Email Address" id="email">
+        <input type="password" placeholder="Password" id="password">
+        <button type="submit" id="submit">CLAIM YOUR FREE TRIAL</button>
+        <p>By clicking the button,you are agreeing to our <span>Terms and Services</span></p>
+      </form>
     </section>
   </main>
   <script src="index.js"></script>
