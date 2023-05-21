@@ -1,158 +1,174 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 *{
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 body{
-display: grid;
-height: 100vh;
-width: 100vw;
-place-content: center;
-font-family: 'Poppins', sans-serif;
-
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;;
 }
-
-.card{
-  max-width: 1440px;
-  max-height:800px;
-  width: 90%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  background-image: url('images/bg-intro-desktop.png');
-  background-color: hsl(0, 100%, 74%) ;
-}
-.form{
-  margin: 30px ;
-}
-
-form{
-  display: flex;
-  flex-direction: column;
-  justify-content:center; 
-  align-items: center; 
-  width: 90%;
-  margin: 0 auto;
-  background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 1px 4px 5px 2px rgba(0,0,0,0.4);
-}
-
-form input,button{
+main{
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(images/bg-intro-desktop.png);
   width: 100%;
-  padding: 15px;
-  margin: 10px 0; 
-  border-radius: 6px;
-  outline: none;
-}
-form input{
-  border: 1px solid hsl(246, 25%, 77%);
-}
-form input:focus{
-   border: 1px solid hsl(248, 32%, 49%);
-}
-
-.trial-div{
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.trial{
-  width:90%;
-  background-color: hsl(248, 32%, 49%);
-  border: none;
-  color: white;
-  font-weight: 600;
-  box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.5);;
-}
-.trial span{
-  color:hsl(246, 25%, 77%);
+  padding: 0 70px;
 }
 
-form button{
-  background-color:  hsl(154, 59%, 51%);
-  font-weight: 600;
-  border: none;
-  color: white;
-  cursor: pointer;
-  transition: 0.5s;
-  
+#div-info{
+  flex-basis: 50%;
+  padding-left: 30px ;
 }
-form button:hover{
-  opacity: 0.6;
-}
-form p{
-  font-size: 0.6em;
-  color: hsl(246, 25%, 77%);
-}
-form p span{
-  color:hsl(0, 100%, 74%) ;
-}
-
-/* INFO */
-.info{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 40px 80px;
-}
-.info h1{
-  width:90%;
+#div-info h1{
+  width: 70%;
   color: white;
   font-weight: 700;
-  font-size: 2.5em;
-  line-height: 1.2;
-
+  font-size: 2.5rem;
+  line-height: 1.1;
 }
-.info p{
-  width:85%;
-  line-height: 1.6;
-  font-size: 0.7em;
-  margin-top: 10px;
+#div-info p{
+  width: 100%;
   color: white;
+  opacity: 0.7;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+/* FORM */
+#form-div{
+  padding: 20px;
+  flex-basis: 50%;
+ }
+
+/* trial button */
+#div-trial{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:hsl(248, 32%, 49%);
+  padding: 15px;
+  color: white;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#trial span{
+  color: hsl(246, 25%, 77%);
+}
+
+#form-div input{
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border:1px solid hsl(246, 25%, 77%);
+}
+
+#form-div input:focus{
+  outline: none;
+}
+
+#form-inputs{
+  padding: 20px;
+  background-color: white;
+  border-radius: 7px;
+}
+
+/* submit button */
+.submit{
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: hsl(154, 59%, 51%);
+  border:1px solid  hsl(154, 59%, 51%);
+  color: white;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+  font-weight:400;
+}
+.submit:focus{
+  outline:none
+}
+.submit:hover{
+  background-color: hsl(154, 59%, 51%);
+  opacity: 0.6;
+}
+
+.agreement-text{
+  color: hsl(246, 25%, 77%);
+  width: 90%;
+  padding: 5px;
+  font-size: 0.7em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.agreement-text span{
+  color:hsl(0, 100%, 74%);
 }
 
 
-/* QUERIES */
-
-@media screen and (max-width:375px) {
-  .card{
-    width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    background-image: url('images/bg-intro-mobile.png');
-  }
-  .info{
+@media screen and (max-width:800px) {
+  main{
+    background-image: url(images/bg-intro-mobile.png);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px 30px;
+    align-items: center;
+    padding: 0 10px;
   }
-  .info h1{
-    width:70%;
-    font-size: 1.2em;
-    line-height: 1.2;
-    margin: 20px auto;
-    text-align: center;
   
-    }
-    .info{
-      padding-bottom: 10px ;
-    }
-  .info p{
-    width:100%;
-    line-height: 1.5;
-    font-size: 1rem;
-    margin-top: 10px;
-    color:white;
-    text-align:center;
-  }
+#div-info{
+  padding-left: 0 ;
+  flex-basis: 0;
+}
+#div-info h1{
+  width: 70%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 50px auto;
+}
+#div-info p{
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+#form-div{
+  flex-basis: 0;
+  /* margin: -50px 0 100px; */
+}
+.agreement-text{
+  width: 100%;
+}
+}
 
-  form p{
-    text-align: center;
-  }
-  
+/* JS STYLING */
+.icon-div{
+  position: relative;
+}
+.icon{
+  position: absolute;
+  left: 350px;
+  top: -45px;
+  width: 5%;
+}
+
+.deactivate{
+  display: none;
+}
+.error{
+  color:red;
+  float:right;
+  margin-top: -5px;
+  margin-bottom: 5px;
+  font-size: 0.7rem;
 }
